@@ -1,0 +1,283 @@
+{
+  "version": "1.0",
+  "description": "Well-known technical books in Claude's training data (no PDF reading needed)",
+  "last_updated": "2026-01-30",
+  "books": {
+    "clean-code": {
+      "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+      "author": "Robert C. Martin",
+      "year": 2008,
+      "aliases": ["Clean Code", "clean code"],
+      "topics": ["code quality", "refactoring", "best practices", "software craftsmanship"],
+      "in_claude_training": true,
+      "prompts": {
+        "summary": "Summarize the main principles from Clean Code by Robert Martin",
+        "specific_topic": "Explain the [TOPIC] principles from Clean Code with examples",
+        "apply_to_code": "Review this code using Clean Code principles and suggest improvements",
+        "compare": "Compare Clean Code principles with [OTHER BOOK/APPROACH]"
+      },
+      "key_concepts": [
+        "Meaningful names",
+        "Functions should be small",
+        "Don't repeat yourself (DRY)",
+        "Comments are a last resort",
+        "Error handling",
+        "Unit tests",
+        "Classes should be small",
+        "SOLID principles"
+      ]
+    },
+    "refactoring": {
+      "title": "Refactoring: Improving the Design of Existing Code",
+      "author": "Martin Fowler",
+      "year": 2018,
+      "aliases": ["Refactoring", "refactoring fowler"],
+      "topics": ["refactoring", "code improvement", "design patterns", "technical debt"],
+      "in_claude_training": true,
+      "prompts": {
+        "summary": "Summarize key refactoring techniques from Martin Fowler's Refactoring",
+        "specific_technique": "Explain the [TECHNIQUE] refactoring pattern from Fowler's book",
+        "apply_to_code": "Suggest refactorings for this code based on Fowler's catalog",
+        "when_to_refactor": "When should I apply [REFACTORING] based on Fowler's guidelines?"
+      },
+      "key_concepts": [
+        "Code smells",
+        "Extract method",
+        "Rename variable",
+        "Move method",
+        "Replace conditional with polymorphism",
+        "Introduce parameter object",
+        "Preserve observable behavior"
+      ]
+    },
+    "design-patterns": {
+      "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+      "author": "Gang of Four (GoF)",
+      "year": 1994,
+      "aliases": ["Design Patterns", "GoF", "Gang of Four"],
+      "topics": ["design patterns", "OOP", "software architecture", "reusable design"],
+      "in_claude_training": true,
+      "prompts": {
+        "summary": "Explain the main design patterns from the Gang of Four book",
+        "specific_pattern": "Explain the [PATTERN] design pattern with implementation examples",
+        "apply_to_problem": "Which GoF pattern(s) should I use for [PROBLEM DESCRIPTION]?",
+        "compare_patterns": "Compare [PATTERN1] and [PATTERN2] patterns - when to use each?"
+      },
+      "key_concepts": [
+        "Singleton",
+        "Factory Method",
+        "Abstract Factory",
+        "Builder",
+        "Prototype",
+        "Adapter",
+        "Decorator",
+        "Facade",
+        "Observer",
+        "Strategy",
+        "Template Method",
+        "Command"
+      ]
+    },
+    "clean-architecture": {
+      "title": "Clean Architecture: A Craftsman's Guide to Software Structure and Design",
+      "author": "Robert C. Martin",
+      "year": 2017,
+      "aliases": ["Clean Architecture", "clean architecture"],
+      "topics": ["software architecture", "SOLID", "component design", "dependency management"],
+      "in_claude_training": true,
+      "prompts": {
+        "summary": "Summarize the main architectural principles from Clean Architecture",
+        "specific_principle": "Explain the [PRINCIPLE] from Clean Architecture with examples",
+        "apply_to_system": "How would Clean Architecture principles apply to [SYSTEM DESCRIPTION]?",
+        "layers": "Explain the layered architecture from Clean Architecture"
+      },
+      "key_concepts": [
+        "SOLID principles",
+        "Dependency rule",
+        "Entities",
+        "Use cases",
+        "Interface adapters",
+        "Frameworks and drivers",
+        "Screaming architecture",
+        "Plugin architecture"
+      ]
+    },
+    "effective-java": {
+      "title": "Effective Java",
+      "author": "Joshua Bloch",
+      "year": 2017,
+      "aliases": ["Effective Java", "effective java"],
+      "topics": ["Java", "best practices", "API design", "performance"],
+      "in_claude_training": true,
+      "prompts": {
+        "summary": "Summarize key items from Effective Java by Joshua Bloch",
+        "specific_item": "Explain Item [NUMBER]: [TITLE] from Effective Java",
+        "apply_to_code": "Review this Java code using Effective Java best practices",
+        "category": "What does Effective Java say about [CATEGORY]?"
+      },
+      "key_concepts": [
+        "Builder pattern for constructors",
+        "Avoid finalizers",
+        "Override equals and hashCode together",
+        "Favor composition over inheritance",
+        "Use enums instead of int constants",
+        "Prefer interfaces to abstract classes",
+        "Use streams judiciously",
+        "Synchronize access to shared mutable data"
+      ]
+    },
+    "effective-python": {
+      "title": "Effective Python: 90 Specific Ways to Write Better Python",
+      "author": "Brett Slatkin",
+      "year": 2019,
+      "aliases": ["Effective Python", "effective python"],
+      "topics": ["Python", "best practices", "Pythonic code", "performance"],
+      "in_claude_training": true,
+      "prompts": {
+        "summary": "Summarize key items from Effective Python by Brett Slatkin",
+        "specific_item": "Explain Item [NUMBER]: [TITLE] from Effective Python",
+        "apply_to_code": "Review this Python code using Effective Python best practices",
+        "category": "What does Effective Python say about [CATEGORY]?"
+      },
+      "key_concepts": [
+        "Know which version of Python you're using",
+        "Follow PEP 8 style guide",
+        "Use list comprehensions instead of map and filter",
+        "Avoid using more than two expressions in list comprehensions",
+        "Prefer enumerate over range",
+        "Use zip to process iterators in parallel",
+        "Avoid else blocks after for and while loops",
+        "Use assignment expressions to reduce repetition",
+        "Use descriptors for reusable property logic",
+        "Consider coroutines to run many functions concurrently"
+      ]
+    },
+    "pragmatic-programmer": {
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt and David Thomas",
+      "year": 2019,
+      "aliases": ["Pragmatic Programmer", "pragmatic programmer"],
+      "topics": ["software craftsmanship", "best practices", "productivity", "career development"],
+      "in_claude_training": true,
+      "prompts": {
+        "summary": "Summarize key tips from The Pragmatic Programmer",
+        "specific_tip": "Explain the [TIP] from The Pragmatic Programmer",
+        "apply_to_situation": "What would The Pragmatic Programmer recommend for [SITUATION]?",
+        "philosophy": "Explain the pragmatic philosophy for [TOPIC]"
+      },
+      "key_concepts": [
+        "DRY principle",
+        "Orthogonality",
+        "Tracer bullets",
+        "Broken windows",
+        "Stone soup and boiled frogs",
+        "Good enough software",
+        "Know your tools",
+        "Programming by coincidence"
+      ]
+    },
+    "domain-driven-design": {
+      "title": "Domain-Driven Design: Tackling Complexity in the Heart of Software",
+      "author": "Eric Evans",
+      "year": 2003,
+      "aliases": ["Domain-Driven Design", "DDD", "domain driven design"],
+      "topics": ["DDD", "software design", "domain modeling", "bounded contexts"],
+      "in_claude_training": true,
+      "prompts": {
+        "summary": "Summarize the main concepts of Domain-Driven Design",
+        "specific_concept": "Explain [CONCEPT] from Domain-Driven Design",
+        "apply_to_domain": "How would DDD approach modeling [DOMAIN]?",
+        "patterns": "Explain DDD tactical patterns for [SCENARIO]"
+      },
+      "key_concepts": [
+        "Ubiquitous language",
+        "Bounded contexts",
+        "Entities",
+        "Value objects",
+        "Aggregates",
+        "Repositories",
+        "Domain events",
+        "Strategic design"
+      ]
+    }
+  },
+  "curated_combinations": {
+    "clean-code-fundamentals": {
+      "name": "Clean Code Fundamentals",
+      "description": "Essential books for writing clean, maintainable code",
+      "books": ["clean-code", "refactoring", "design-patterns", "clean-architecture"],
+      "learning_path": [
+        "1. Start with Clean Code - learn the basics",
+        "2. Study Refactoring - learn to improve existing code",
+        "3. Master Design Patterns - learn reusable solutions",
+        "4. Apply Clean Architecture - learn system-level organization"
+      ],
+      "prompts": {
+        "overview": "Give me an overview of the Clean Code stack: Clean Code, Refactoring, Design Patterns, and Clean Architecture",
+        "apply_all": "Review this code using principles from Clean Code, Refactoring, Design Patterns, and Clean Architecture",
+        "learning_order": "I want to learn clean coding. Should I read Clean Code, Refactoring, Design Patterns, or Clean Architecture first?"
+      }
+    },
+    "java-mastery": {
+      "name": "Java Best Practices",
+      "description": "Essential reading for Java developers",
+      "books": ["effective-java", "clean-code", "design-patterns"],
+      "learning_path": [
+        "1. Effective Java - language-specific best practices",
+        "2. Clean Code - general code quality principles",
+        "3. Design Patterns - reusable solutions in Java"
+      ],
+      "prompts": {
+        "overview": "Summarize best practices for Java from Effective Java, Clean Code, and Design Patterns",
+        "apply_all": "Review this Java code using Effective Java, Clean Code, and Design Patterns principles",
+        "specific_topic": "How do Effective Java, Clean Code, and Design Patterns approach [TOPIC]?"
+      }
+    },
+    "python-mastery": {
+      "name": "Python Best Practices",
+      "description": "Essential reading for Python developers",
+      "books": ["effective-python", "clean-code", "design-patterns"],
+      "learning_path": [
+        "1. Effective Python - language-specific best practices",
+        "2. Clean Code - general code quality principles",
+        "3. Design Patterns - reusable solutions in Python"
+      ],
+      "prompts": {
+        "overview": "Summarize best practices for Python from Effective Python, Clean Code, and Design Patterns",
+        "apply_all": "Review this Python code using Effective Python, Clean Code, and Design Patterns principles",
+        "specific_topic": "How do Effective Python, Clean Code, and Design Patterns approach [TOPIC]?"
+      }
+    },
+    "software-architecture": {
+      "name": "Software Architecture",
+      "description": "Books for understanding system design and architecture",
+      "books": ["clean-architecture", "design-patterns", "domain-driven-design"],
+      "learning_path": [
+        "1. Design Patterns - learn component-level patterns",
+        "2. Clean Architecture - learn layered architecture",
+        "3. Domain-Driven Design - learn domain modeling"
+      ],
+      "prompts": {
+        "overview": "Explain architectural approaches from Clean Architecture, Design Patterns, and DDD",
+        "apply_to_system": "Design architecture for [SYSTEM] using Clean Architecture, Design Patterns, and DDD",
+        "compare": "Compare architectural approaches: Clean Architecture vs DDD"
+      }
+    },
+    "craftsmanship": {
+      "name": "Software Craftsmanship",
+      "description": "Complete guide to professional software development",
+      "books": ["pragmatic-programmer", "clean-code", "refactoring", "clean-architecture"],
+      "learning_path": [
+        "1. Pragmatic Programmer - mindset and philosophy",
+        "2. Clean Code - code-level practices",
+        "3. Refactoring - improving existing code",
+        "4. Clean Architecture - system design"
+      ],
+      "prompts": {
+        "overview": "What makes a software craftsman according to Pragmatic Programmer, Clean Code, Refactoring, and Clean Architecture?",
+        "apply_all": "Evaluate my development approach using all four craftsmanship books",
+        "career_advice": "Career advice from the software craftsmanship stack"
+      }
+    }
+  }
+}
